@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 # nu11secur1ty - http://nu11secur1ty.blogspot.com/
-# Taken from: https://github.com/nu11secur1ty/conky/blob/master/puseaudion.sh
+# Taken from: 
 
 
 
