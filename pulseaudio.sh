@@ -7,7 +7,7 @@
 ##### Running pulseaudio autostart ~ gui desktop audio
 echo -e "\n\e[01;32m[+]\e[00m Preparing pulseaudio"
          file=/usr/local/bin/pulseaudio.sh; [ -e $file ] && cp -n $file{,.bkup}
-echo -e '#!/bin/bash\ntimeout 10 killall -q pulseaudio\nsleep 15\pulseaudio -D\exit 0;' > $file
+echo -e  '#!/bin/bash\ntimeout 10 pulseaudio -D\nnsleep 15\nexit 0;'> $file
 chmod 0500 $file
 mkdir -p /root/.config/autostart/
          file=/root/.config/autostart/pulseaudioscript.sh.desktop; [ -e $file ] && cp -n $file{,.bkup}
